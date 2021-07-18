@@ -65,9 +65,10 @@ const Contact = () => {
           className="pr-lg-5 pr-xs-3 text-wrap color-customBlueLight"
           style={{ fontSize: descFontSize }}
         >
-          One of my favorite things about this job is the variety, in clients
-          and projects. So no matter the work or technology, get in touch and
-          tell me what you have in mind. — I can’t wait to hear all about it!
+          One of my favorite things about developing web applications is the
+          variety in projects. So if you want to collaborate or have some work
+          for me , get in touch and tell me what you have in mind. — I can’t
+          wait to hear all about it!
         </h5>
         <br />
 
