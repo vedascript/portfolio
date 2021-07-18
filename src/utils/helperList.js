@@ -104,7 +104,7 @@ export const projectsList = [
   },
   {
     label: "Blog Platform",
-    imgSrc: "blog-site.png",
+    imgSrc: "images/blog-site.png",
     src: "",
     githubSrc: "https://github.com/vedascript/blog-site",
     description:
@@ -113,7 +113,7 @@ export const projectsList = [
   },
   {
     label: "Expense Tracker",
-    imgSrc: "expenses.png",
+    imgSrc: "images/expenses.png",
     src: "#",
     githubSrc: "#",
     description: "An expense tracker to track user's expenses",
@@ -121,7 +121,7 @@ export const projectsList = [
   },
   {
     label: "Sudoku Solver",
-    imgSrc: "sudoku.png",
+    imgSrc: "images/sudoku.png",
     src: "https://sudokusolvervw.netlify.app",
     githubSrc: "https://github.com/vedascript/sudokuSolver",
     description: "A automated sudoku solver - an aaplication of backtraking",
@@ -129,7 +129,7 @@ export const projectsList = [
   },
   {
     label: "Fathom Health Clone",
-    imgSrc: "fathom.png",
+    imgSrc: "images/fathom.png",
     src: "https://fathomhealth.netlify.app",
     githubSrc: "https://github.com/vedascript/fathomhealth-clone",
     description: "A visual clone of Fathom Health completed in 3 days",
