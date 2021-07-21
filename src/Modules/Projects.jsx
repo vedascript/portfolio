@@ -1,6 +1,6 @@
 import React, { Fragment } from "react";
 import CustomNav from "../Components/NavBar";
-import { Container, Row, Col, Badge } from "react-bootstrap";
+import { Container, Row, Col, Badge, Button } from "react-bootstrap";
 import { projectsList } from "../utils/helperList";
 
 const Projects = () => {
@@ -32,22 +32,28 @@ const Projects = () => {
                     <br />
                   </>
                 )}
-                Link:{" "}
-                <a href={proj.src} target="_blank" rel="noopener noreferrer">
-                  {proj.src}
-                </a>
-                <br />
-                <br />
+
+                <Button
+                  variant="outline-primary"
+                  size="sm"
+                  onClick={() => window.open(proj.src, "_blank")}
+                  className="projectBtn"
+                >
+                  {" "}
+                  See This Live
+                </Button>
+
                 {proj.githubSrc && (
                   <>
-                    Source code:{" "}
-                    <a
-                      href={proj.githubSrc}
-                      target="_blank"
-                      rel="noopener noreferrer"
+                    <Button
+                      variant="outline-primary"
+                      size="sm"
+                      onClick={() => window.open(proj.githubSrc, "_blank")}
+                      className="projectBtn"
+                      style={{ marginLeft: "8px" }}
                     >
-                      {proj.githubSrc}
-                    </a>
+                      Source code
+                    </Button>
                     <br />
                   </>
                 )}

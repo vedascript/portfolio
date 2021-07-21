@@ -141,6 +141,10 @@ code {
   border-radius: 20px;
 }
 
+.projectBtn {
+  margin-top: 10px;
+}
+
 /* Contact page */
 .contact-btns span {
   max-width: 0;

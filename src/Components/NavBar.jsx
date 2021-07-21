@@ -22,7 +22,7 @@ const navItems = [
   },
   {
     label: "Resume",
-    route: "/contact",
+    route: "/resume.pdf",
   },
 ];
 

@@ -102,8 +102,7 @@ export const backSkillsList = [
 export const projectsList = [
   {
     label: "Coursera Clone",
-    imgSrc:
-      "https://user-images.githubusercontent.com/42139446/122419364-79cf0d80-cfa8-11eb-8aa3-66e99eebfdf4.png",
+    imgSrc: "images/coursera.png",
     src: "#",
     githubSrc: "https://github.com/vedascript/coursera-clone/tree/master",
     description: "An EdTech Platform with all MVP features",
@@ -114,8 +113,7 @@ export const projectsList = [
     imgSrc: "images/blog-site.png",
     src: "",
     githubSrc: "https://github.com/vedascript/blog-site",
-    description:
-      "A Blog platform where user can publish,edit,delete his blogs and can see other user's blogs",
+    description: "A Blog platform where user can publish,edit,delete his blogs",
     stack: ["React", "Redux", "Express", "Mongoose", "Node.js", "CSS"],
   },
   {
