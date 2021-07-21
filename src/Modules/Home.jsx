@@ -1,6 +1,6 @@
 import React from "react";
 import CustomNav from "../Components/NavBar";
-import { Container, Button } from "react-bootstrap";
+import { Container, Button, Image } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithubSquare, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import CodingSvg from "../Icons/coding";
@@ -78,8 +78,14 @@ const Home = ({ history }) => {
                 </div>
               </div>
             </div>
-            <div className="w-50 my-auto d-none d-md-block">
-              <CodingSvg />
+            <div className="w-50 my-auto d-none d-md-block ">
+              {/* <CodingSvg /> */}
+              <Image
+                src="images/vedansh.jpg"
+                thumbnail
+                fluid
+                className="profilePic"
+              />
             </div>
           </div>
         </Container>
