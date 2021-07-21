@@ -26,7 +26,7 @@ code {
 }
 
 .color-customBlueLight {
-  color: #8d81a5 !important;
+  color: #516897 !important;
 }
 
 .color-customBlueLighter {
@@ -82,22 +82,57 @@ code {
   -webkit-tap-highlight-color: transparent; */
 }
 
+.skillWraper {
+  position: relative;
+}
+
 .skillsImg {
-  width: 70px;
+  width: 150px;
   transition: width 0.15s;
   transition-timing-function: ease-in-out;
   /* -webkit-filter: grayscale(100%);
   filter: grayscale(100%); */
   cursor: pointer;
+  opacity: 1;
+  display: block;
+  backface-visibility: hidden;
 }
 
-.skillsImg:hover {
-  width: 80px;
+.skillName {
+  position: absolute;
+  top: 100%;
+  background-color: rgba(135, 175, 255, 0.85);
+  padding: 5px;
+  color: #071b4b;
+  font-weight: 600;
+  visibility: hidden;
+}
+
+.skillWraper:hover .skillsImg {
+  width: 180px;
   filter: none;
+}
+
+.skillWraper:hover .skillName {
+  visibility: visible;
 }
 
 .justify-content-evenly {
   justify-content: space-evenly;
+}
+
+.headingMargin {
+  margin-left: 15px;
+}
+
+.textCenter {
+  text-align: center;
+}
+
+.smallImgContainer {
+  text-align: center;
+  display: flex;
+  justify-content: center;
 }
 
 /* Projects page */

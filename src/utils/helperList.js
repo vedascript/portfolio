@@ -29,22 +29,53 @@ export const showcaseSkills = [
   },
 ];
 
-export const skillsList = [
+export const frontSkillsList = [
+  {
+    label: "HTML5",
+    src: "https://img.icons8.com/color/480/000000/html-5--v1.png",
+  },
+  {
+    label: "CSS3",
+    src: "https://img.icons8.com/color/480/000000/css3.png",
+  },
   {
     label: "Javascript",
-    src: "https://img.icons8.com/color/144/000000/javascript.png",
+    src: "https://img.icons8.com/color/480/000000/javascript.png",
   },
   {
     label: "React",
-    src: "https://img.icons8.com/color/144/000000/react-native.png",
+    src: "https://img.icons8.com/color/480/000000/react-native.png",
   },
   {
     label: "Redux",
-    src: "https://img.icons8.com/color/144/000000/redux.png",
+    src: "https://img.icons8.com/color/480/000000/redux.png",
   },
   {
+    label: "Material UI",
+    src: "https://material-ui.com/static/logo_raw.svg",
+  },
+  {
+    label: "Bootstrap",
+    src: "https://i.ibb.co/zx0Tt9M/bootstrap.png",
+  },
+  {
+    label: "Github",
+    src: "https://img.icons8.com/fluent/480/000000/github.png",
+  },
+  {
+    label: "NPM",
+    src: "https://img.icons8.com/color/480/000000/npm.png",
+  },
+  {
+    label: "Yarn",
+    src: "https://i.ibb.co/GtbG98V/yarn2.png",
+  },
+];
+
+export const backSkillsList = [
+  {
     label: "Node JS",
-    src: "https://img.icons8.com/color/144/000000/nodejs.png",
+    src: "https://img.icons8.com/color/480/000000/nodejs.png",
   },
   {
     label: "Express JS",
@@ -56,39 +87,15 @@ export const skillsList = [
   },
   {
     label: "My Sql",
-    src: "https://img.icons8.com/fluent/96/000000/mysql-logo.png",
+    src: "https://img.icons8.com/fluent/480/000000/mysql-logo.png",
   },
   {
     label: "Firebase",
-    src: "https://img.icons8.com/color/50/000000/firebase.png",
+    src: "https://img.icons8.com/color/480/000000/firebase.png",
   },
   {
-    label: "HTML5",
-    src: "https://img.icons8.com/color/96/000000/html-5--v1.png",
-  },
-  {
-    label: "CSS3",
-    src: "https://img.icons8.com/color/96/000000/css3.png",
-  },
-  {
-    label: "Github",
-    src: "https://img.icons8.com/fluent/144/000000/github.png",
-  },
-  {
-    label: "NPM",
-    src: "https://img.icons8.com/color/144/000000/npm.png",
-  },
-  {
-    label: "Yarn",
-    src: "https://i.ibb.co/GtbG98V/yarn2.png",
-  },
-  {
-    label: "Material UI",
-    src: "https://material-ui.com/static/logo_raw.svg",
-  },
-  {
-    label: "Bootstrap",
-    src: "https://i.ibb.co/zx0Tt9M/bootstrap.png",
+    label: "Redis",
+    src: "https://img.icons8.com/color/480/000000/redis.png",
   },
 ];
 

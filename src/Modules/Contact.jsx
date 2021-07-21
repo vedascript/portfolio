@@ -2,10 +2,10 @@ import React from "react";
 import CustomNav from "../Components/NavBar";
 import { Container, Button } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faPhone, faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { faLinkedinIn, faGithub } from "@fortawesome/free-brands-svg-icons";
 import curveSvg from "../Icons/curved.svg";
 import useWindowDimensions from "../utils/dimensionHelper";
-import GmailSvg from "../Icons/gmail";
 
 const Contact = () => {
   const { width } = useWindowDimensions();
@@ -74,6 +74,11 @@ const Contact = () => {
 
         <br />
         <div className="mt-3 mb-3 pr-lg-5 pr-xs-3">
+          <Button className="contact-btns bg-customBlue mr-2 shadow border-0 py-1">
+            <FontAwesomeIcon size="1x" icon={faPhone} />
+            <span>8999989113</span>
+          </Button>
+
           <Button
             className="contact-btns bg-customBlue mr-2 shadow border-0 py-1"
             onClick={() =>
@@ -102,7 +107,7 @@ const Contact = () => {
               )
             }
           >
-            <GmailSvg fillColor="#8d81a5" style={{ width: 16 }} />
+            <FontAwesomeIcon size="1x" icon={faEnvelope} />
             <span>Mail</span>
           </Button>
         </div>

@@ -20,6 +20,10 @@ const navItems = [
     label: "Contact",
     route: "/contact",
   },
+  {
+    label: "Resume",
+    route: "/contact",
+  },
 ];
 
 const CustomNav = () => {
@@ -46,7 +50,7 @@ const CustomNav = () => {
                 <NavLink
                   exact
                   className="color-customBlue w-100 text-decoration-none"
-                  activeClassName="font-weight-bold"
+                  activeClassName="font-weight-bold border border-primary shadow-sm p-3 mb-5 bg-white rounded"
                   to={item.route}
                 >
                   {item.label}

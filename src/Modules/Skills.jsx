@@ -1,42 +1,48 @@
-import React, { Fragment } from 'react';
-import CustomNav from '../Components/NavBar';
-import { Container, Row, ProgressBar, FormLabel, Col } from 'react-bootstrap';
-import IconCard from '../Components/IconCard';
-import { showcaseSkills, skillsList } from '../utils/helperList';
+import React from "react";
+import CustomNav from "../Components/NavBar";
+import { Container, Row } from "react-bootstrap";
+import IconCard from "../Components/IconCard";
+import { frontSkillsList, backSkillsList } from "../utils/helperList";
+import useWindowDimensions from "../utils/dimensionHelper";
 
 const Skills = () => {
-  return(
+  const { width } = useWindowDimensions();
+
+  let imgContainerWidthClass;
+  let headingMargin;
+  if (width < 577) {
+    imgContainerWidthClass = "textCenter";
+  }
+  if (width > 577) {
+    headingMargin = "headingMargin";
+  }
+
+  return (
     <>
       <CustomNav />
-      <Container
-        className="mt-5"
-        style={{
-          // backgroundColor: "#f9f9f9"
-          // height: '100vh'
-        // , position: 'absolute', top: 0, bottom: 0, left: 0, right: 0
-        }}
-      >
-        {/* <h2 className="color-customBlue">Tech stack experience</h2> */}
-        <Row xs={1} md={2}>
-          <Col>
-            <div className="py-3">
-              {showcaseSkills.map(skill => <Fragment key={skill.label}>
-                <FormLabel className="color-customBlue">{skill.label}</FormLabel>
-                <ProgressBar now={skill.rating} variant="progress-progCustomBlue" style={{height: 4}} className="" /><br />
-              </Fragment>)}
-            </div>
-          </Col>
-          <Col>
-            <Row className="justify-content-evenly">
-              {skillsList.map(s => (
-                <IconCard key={s.label} src={s.src} />
-              ))}
-            </Row>
-          </Col>
+      <Container className={`mt-5 ${imgContainerWidthClass}  `}>
+        <h2 className={`color-customBlue text-boldest ${headingMargin}`}>
+          Front End
+        </h2>
+        <Row xs={1} sm={2} md={3} lg={4}>
+          {frontSkillsList.map((s) => (
+            <IconCard key={s.label} src={s.src} skillName={s.label} />
+          ))}
+        </Row>
+      </Container>
+
+      <Container className={`mt-5 ${imgContainerWidthClass}  `}>
+        <h2 className={`color-customBlue text-boldest ${headingMargin}`}>
+          Back End
+        </h2>
+        <Row xs={1} sm={2} md={3} lg={4}>
+          {backSkillsList.map((s) => (
+            <IconCard key={s.label} src={s.src} skillName={s.label} />
+          ))}
         </Row>
       </Container>
     </>
-  )
+  );
 };
 
 export default Skills;
