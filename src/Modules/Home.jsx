@@ -71,9 +71,9 @@ const Home = ({ history }) => {
                   <br />
                   <Button
                     className="bg-customBlue font-weight-bold shadow border-0"
-                    onClick={() => history.push("/contact")}
+                    onClick={() => window.open("/resume.pdf", "_blank")}
                   >
-                    Contact Me
+                    Resume
                   </Button>
                 </div>
               </div>

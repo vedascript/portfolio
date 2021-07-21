@@ -20,10 +20,6 @@ const navItems = [
     label: "Contact",
     route: "/contact",
   },
-  {
-    label: "Resume",
-    route: "/resume.pdf",
-  },
 ];
 
 const CustomNav = () => {
