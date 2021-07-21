@@ -119,8 +119,8 @@ export const projectsList = [
   {
     label: "Expense Tracker",
     imgSrc: "images/expenses.png",
-    src: "#",
-    githubSrc: "#",
+    src: "https://expenssetrackerr.netlify.app/",
+    githubSrc: "https://github.com/vedascript/expenseTracker",
     description: "An expense tracker to track user's expenses",
     stack: ["React", "React-Charts", "Material-UI"],
   },
